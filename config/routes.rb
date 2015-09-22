@@ -9,9 +9,15 @@ Rails.application.routes.draw do
   post '/follow/:id', to: 'relationships#create'
   post '/unfollow/:id', to: 'relationships#destroy'
 
-  get '/users/search', to: 'users#search', as: 'search_user'
+  # get '/users/search', to: 'users#search', as: 'search_user'
 
   get '/timeline', to: 'users#timeline', as: 'timeline'
+
+  resources :users do
+    collection do
+      get :autocomplete
+    end
+  end
 
   resources :users
   resources :posts

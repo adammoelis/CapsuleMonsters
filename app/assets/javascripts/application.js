@@ -15,4 +15,5 @@
 //= require private_pub
 //= require best_in_place
 //= require turbolinks
+
 //= require_tree .

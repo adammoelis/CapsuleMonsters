@@ -7,9 +7,12 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-# Seed data
+#search competencies
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
+gem 'searchkick'
+# Random generator
 gem 'faker'
-# Random name generator
 gem 'bazaar'
 #securing the API keys
 gem 'dotenv-rails', :groups => [:development]
