@@ -40,6 +40,9 @@ gem 'private_pub'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# For image uploads
+gem "paperclip", "~> 4.3"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

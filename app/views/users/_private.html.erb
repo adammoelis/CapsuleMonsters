@@ -6,6 +6,11 @@
   <strong>Avatar:</strong>
   <%= best_in_place user, :image_src %> -edit
 </p>
+
+<%= form_for @user, url: users_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :avatar %>
+<% end %>
+
 <p>
   <strong>Bio:</strong>
   <%= best_in_place user, :bio %> -edit
